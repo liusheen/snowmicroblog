@@ -24,3 +24,105 @@
 2020-04-16 11:50:38,736 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:48]
 2020-04-16 23:10:50,869 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:47]
 2020-04-16 23:13:33,139 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:47]
+2020-04-16 23:53:29,188 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:49]
+2020-04-20 00:12:07,045 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:12:13,517 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:12:16,640 ERROR: Exception on /index [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/root/develop/code/snowmicroblog/microblog/app/routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "/usr/local/lib/python3.7/site-packages/flask_babel/__init__.py", line 255, in get_locale
+    locale = Locale.parse(rv)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-cn'
+2020-04-20 00:12:18,308 ERROR: Exception on /favicon.ico [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/root/develop/code/snowmicroblog/microblog/app/routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "/usr/local/lib/python3.7/site-packages/flask_babel/__init__.py", line 255, in get_locale
+    locale = Locale.parse(rv)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-cn'
+2020-04-20 00:12:19,953 ERROR: Exception on /index [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/root/develop/code/snowmicroblog/microblog/app/routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "/usr/local/lib/python3.7/site-packages/flask_babel/__init__.py", line 255, in get_locale
+    locale = Locale.parse(rv)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-cn'
+2020-04-20 00:12:20,151 ERROR: Exception on /favicon.ico [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/root/develop/code/snowmicroblog/microblog/app/routes.py", line 17, in before_request
+    g.locale = str(get_locale())
+  File "/usr/local/lib/python3.7/site-packages/flask_babel/__init__.py", line 255, in get_locale
+    locale = Locale.parse(rv)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "/usr/local/lib/python3.7/site-packages/babel/core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-cn'
+2020-04-20 00:12:42,253 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:20:22,327 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:20:32,340 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:20:39,120 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:20:44,532 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:20:51,945 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
+2020-04-20 00:20:56,303 INFO: Microblog startup [in /root/develop/code/snowmicroblog/microblog/app/__init__.py:54]
